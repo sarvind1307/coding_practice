@@ -1,10 +1,11 @@
-def get_sum(a,b):
-    s = 0
-    if a < b:
-        a,b = b,a
-    for i in range(a, b+1):
-        print(i)
-        s += i
-    return s
+# def sumCubes(n):
+#     x = n * (n + 1) // 2
+#     return x**2
 
-print(get_sum(0, -1))
+# x = sumCubes(2022)
+
+def past(h, m, s):
+    # Good Luck!
+    return (h * 60 * 60 + m * 60 + s) * 1000
+
+x = past(1,0,0)
