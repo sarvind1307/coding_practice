@@ -1,0 +1,32 @@
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  var s;
+
+  if (strokes == 1) {
+    s = "Hole-in-one!";
+  }
+  else if (strokes <= par - 2) {
+    s = "Eagle";
+  }
+  else if (strokes == par - 1) {
+    s = "Birdie";
+  }
+  else if (strokes == par) {
+    s = "Par";
+  }
+  else if (strokes == par + 1) {
+    s = "Bogey";
+  }
+  else if (strokes == par + 2) {
+    s = "Double Bogey";
+  }
+  else {
+    s = "Go Home!";
+  }
+
+  return s;
+}
+
+golfScore(5, 4);
