@@ -1,0 +1,2 @@
+let reCriminals = /C+/;
+console.log(reCriminals) // Change this line
