@@ -1,0 +1,14 @@
+function mutation(arr) {
+  let x1 = arr[0].toLowerCase().split("").sort();
+  let x2 = arr[1].toLowerCase().split("").sort();
+  console.log(x1, x2);
+  for(let i in x2) {
+    console.log(x1.indexOf(x2[i]));
+    if (x1.indexOf(x2[i]) == -1)  {
+      return false;
+    }
+  }
+  return true;
+}
+
+mutation(["hello", "hey"]);

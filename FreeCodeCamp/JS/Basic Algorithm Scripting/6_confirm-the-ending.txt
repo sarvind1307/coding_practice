@@ -1,0 +1,5 @@
+function confirmEnding(str, target) {
+  return str.slice(-1 * target.length) === target;
+}
+
+confirmEnding("Bastian", "n");
