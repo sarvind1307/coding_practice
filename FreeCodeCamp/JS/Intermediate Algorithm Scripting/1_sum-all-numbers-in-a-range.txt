@@ -1,0 +1,9 @@
+function sumAll(arr) {
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+  let ans = (max - min + 1) * (min + max) / 2;
+  console.log(min,max,ans);
+  return ans;
+}
+
+sumAll([1, 4]);

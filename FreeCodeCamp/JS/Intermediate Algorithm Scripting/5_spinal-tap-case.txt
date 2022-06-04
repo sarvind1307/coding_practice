@@ -1,0 +1,10 @@
+function spinalCase(str) {
+  let x =  str
+    .split(/\s|_|(?=[A-Z])/)
+    .join("-")
+    .toLowerCase();
+  console.log(x);
+  return x;
+}
+
+spinalCase('This Is Spinal Tap');
